@@ -1,0 +1,63 @@
+.navbar {
+  &__list {
+    display: none;
+    margin-top: 2rem;
+    background-color: $dark-blue;
+    padding: 2rem 4rem;
+    text-align: center;
+    position: absolute;
+    right: 2rem;
+
+    @include mq(medium) {
+      display: flex !important;
+      background-color: transparent;
+      margin-top: 0;
+      padding: 0;
+      position: static;
+    }
+
+    & * + * {
+      margin-top: 1.2rem;
+
+      @include mq(medium) {
+        margin-top: 0;
+        margin-left: 2.75rem;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+    color: $white;
+    font-weight: 300;
+
+    @include mq(medium) {
+      color: $text-dark-blue;
+    }
+
+    &:hover {
+      color: $green;
+    }
+
+    &.activated {
+      color: $green;
+    }
+  }
+}
+
+.icon-hamburger,
+.icon-close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  @include mq(medium) {
+    display: none !important;
+  }
+}
+
+.icon-close {
+  display: none;
+  margin-left: auto;
+}

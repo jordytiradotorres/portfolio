@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+
+  @include mq(medium) {
+    margin-top: 3.5rem;
+  }
+}

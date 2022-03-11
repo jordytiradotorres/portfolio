@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { NavLink } from 'react-router-dom';
 import iconHambueger from '../assets/images/icon-hamburger.svg';
 import iconClose from '../assets/images/icon-close.svg';
+import UnorderList from './UnorderList';
 
 const Navbar = () => {
   const iconHamburguerRef = useRef();
@@ -38,41 +38,11 @@ const Navbar = () => {
       >
         <img src={iconClose} alt="icon-close" />
       </button>
-      <ul className="navbar__list" ref={navbarListRef}>
-        <li className="navbar__item">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              'navbar__link ' + (isActive ? 'activated' : '')
-            }
-            onClick={handleIconClose}
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className="navbar__item">
-          <NavLink
-            to="/portfolio"
-            className={({ isActive }) =>
-              'navbar__link ' + (isActive ? 'activated' : '')
-            }
-            onClick={handleIconClose}
-          >
-            Portfolio
-          </NavLink>
-        </li>
-        <li className="navbar__item">
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              'navbar__link ' + (isActive ? 'activated' : '')
-            }
-            onClick={handleIconClose}
-          >
-            Contact Me
-          </NavLink>
-        </li>
-      </ul>
+
+      <UnorderList
+        navbarListRef={navbarListRef}
+        handleIconClose={handleIconClose}
+      />
     </nav>
   );
 };

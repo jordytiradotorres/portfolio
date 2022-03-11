@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -7,7 +8,7 @@ import './styles/styles.scss';
 
 const App = () => {
   return (
-    <div className="container">
+    <div>
       <Header />
 
       <Routes>
@@ -16,7 +17,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };

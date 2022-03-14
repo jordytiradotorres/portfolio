@@ -1,7 +1,13 @@
-import React from 'react';
+import Interested from '../components/Interested';
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className="container">
+      <main className="home">
+        <Interested />
+      </main>
+    </div>
+  );
 };
 
 export default Home;

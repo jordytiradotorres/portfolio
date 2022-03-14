@@ -1,0 +1,46 @@
+.interested {
+  text-align: center;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+
+  @include mq(medium) {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-family: $font-ibarra-real-nova;
+
+    @include mq(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__separator {
+    display: none;
+    height: 1px;
+    width: 100px;
+    background-color: $gray;
+    margin: 0 1.5rem;
+
+    @include mq(medium) {
+      display: block;
+    }
+    @include mq(large) {
+      width: 200px;
+    }
+  }
+
+  .btn {
+    @include button(transparent);
+    align-self: center;
+    min-width: 150px;
+  }
+}

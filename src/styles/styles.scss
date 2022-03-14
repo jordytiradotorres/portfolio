@@ -1,8 +1,10 @@
 @import './base/variables';
 @import './mixins/media-queries';
+@import './mixins/button';
 @import './base/base';
 
 @import './components/header';
 @import './components/navbar';
 @import './components/footer';
 @import './components/socialMedia';
+@import './components/interested';

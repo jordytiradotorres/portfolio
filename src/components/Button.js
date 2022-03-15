@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Button = ({ text }) => {
+const Button = ({ text, url }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    return navigate('/contact');
+    return navigate(`/${url}`);
   };
 
   return (

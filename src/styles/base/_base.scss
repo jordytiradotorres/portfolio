@@ -38,9 +38,6 @@ body {
   width: 88%;
   margin: 0 auto;
 
-  @include mq(medium) {
-    width: 70%;
-  }
   @include mq(large) {
     width: 80%;
   }

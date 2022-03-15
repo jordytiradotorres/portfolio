@@ -9,14 +9,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 7rem 0;
   }
 
   &__title {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    font-family: $font-ibarra-real-nova;
+    @extend %title;
 
     @include mq(medium) {
       margin-bottom: 0;

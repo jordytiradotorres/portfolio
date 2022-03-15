@@ -11,6 +11,7 @@ $white: hsl(0, 0%, 100%);
 $gray: hsl(240, 3%, 87%);
 
 $green: hsl(181, 37%, 55%);
+$dark-green: #203a4c;
 
 $font-public-sans: 'Public Sans', sans-serif;
 $font-ibarra-real-nova: 'Ibarra Real Nova', serif;
@@ -18,7 +19,7 @@ $font-ibarra-real-nova: 'Ibarra Real Nova', serif;
 // breakpoints
 $breakpoints: (
   small: 375px,
-  medium: 768px,
+  medium: 700px,
   large: 1024px,
   x-large: 1440px,
 );

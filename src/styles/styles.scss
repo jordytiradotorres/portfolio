@@ -3,8 +3,12 @@
 @import './mixins/button';
 @import './base/base';
 
+@import './helpers/partial';
+
 @import './components/header';
 @import './components/navbar';
 @import './components/footer';
 @import './components/socialMedia';
 @import './components/interested';
+@import './components/about';
+@import './components//hero';

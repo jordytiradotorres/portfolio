@@ -1,7 +1,13 @@
 import React from 'react';
 import Button from './Button';
 
-const Information = ({ title, description, textButton, urlButton }) => {
+const Information = ({
+  title,
+  description,
+  textButton,
+  urlButton,
+  hrefButton,
+}) => {
   return (
     <div className="about__content">
       <div className="about__separator"></div>
@@ -9,7 +15,11 @@ const Information = ({ title, description, textButton, urlButton }) => {
         <h2>{title}</h2>
         <p>{description}</p>
 
-        <Button text={textButton} url={urlButton} />
+        {urlButton ? (
+          <Button text={textButton} urlButton={urlButton} />
+        ) : (
+          <Button text={textButton} hrefButton={hrefButton} />
+        )}
       </div>
       <div className="about__separator"></div>
     </div>

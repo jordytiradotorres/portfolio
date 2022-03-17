@@ -1,0 +1,41 @@
+.portfolio {
+  @include mq(medium) {
+    margin-bottom: 5rem;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(even) figure {
+      order: 1;
+    }
+  }
+
+  .about {
+    &__image {
+      img {
+        height: 80%;
+        @include mq(large) {
+          height: 100%;
+        }
+      }
+    }
+    &__content {
+      margin-bottom: 2rem;
+
+      @include mq(medium) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__me {
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

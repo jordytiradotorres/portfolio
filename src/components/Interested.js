@@ -9,7 +9,7 @@ const Interested = () => {
 
       <div className="interested__separator"></div>
 
-      <Button text="Contact Me" url="contact" />
+      <Button text="Contact Me" urlButton="contact" />
     </section>
   );
 };

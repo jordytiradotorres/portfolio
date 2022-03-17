@@ -13,7 +13,8 @@ const Hero = () => {
         <h2>Hey, I’m Jordy Tirado and I love building beautiful websites</h2>
         <div>
           <img src={iconArrows} alt="icon arrows" />
-          <Button text="About Me" url="#aboutme" />
+
+          <Button text="About Me" hrefButton="#aboutme" />
         </div>
       </div>
     </section>
